@@ -1,0 +1,68 @@
+<nav class="navbar navStyling">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbars-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color:white;" href="/"> Educanimour </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="/shopping-cart" style="color:white;"> 
+              <i class="fa fa-home" aria-hidden="true"></i> Home 
+            </a> 
+          </li>
+          <li>
+            <a href="/shopping-cart" style="color:white;"> 
+              <i class="fa fa-handshake-o" aria-hidden="true"></i> Services 
+            </a> 
+          </li>
+          <li>
+            <a href="/shopping-cart" style="color:white;"> 
+              <i class="fa fa-paw" aria-hidden="true"></i> Animal Accessories 
+            </a> 
+          </li>
+          <li>
+            <a href="/shopping-cart" style="color:white;"> 
+              <i class="fa fa-camera-retro" aria-hidden="true"></i> Photo Galary 
+            </a> 
+          </li>
+          <li>
+            <a href="/shopping-cart" style="color:white;"> 
+              <i class="fa fa-phone" aria-hidden="true"></i> Contact Us 
+            </a> 
+          </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/shopping-cart" style="color:white;"> 
+            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Shopping Cart 
+            <span class="badge"> {{session.cart.totalQty}} </span>
+          </a> 
+        </li>
+        <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white;"> <i class="fa fa-lock" aria-hidden="true"></i> User Management <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {{# if login}}
+              <li><a href="/users/profile"> User Account</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/users/logout"> Logout </a></li>
+            {{ else }}
+              <li><a href="/users/signup">Sign Up </a></li>
+              <li><a href="/users/signin">Sign In </a></li>
+            {{/if}}
+            
+            
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

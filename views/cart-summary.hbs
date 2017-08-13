@@ -1,0 +1,50 @@
+<div class = "container">
+    <div style="color:white;"> 
+            <h3 style="margin-bottom: 20px;"> Summary of Purchases: </h3>
+            {{# if products }}
+                <div class="row">
+                    <div>
+                    <ul class="list-group">
+                     {{# each products }}
+                        <li class="list-group-item"> 
+                        <span class="badge"> {{ this.qty }}</span>
+                        <strong style="color:black;"> {{this.item.title }}</strong>
+                        <span class="label label-success"> ${{ this.price }} </span>
+
+                        </li>
+                    {{/each}}
+                    </ul>  
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                     <strong style="float:right; margin-right: 15px; font-size: 20px;"> Total Cost: ${{ totalPrice }}</strong>     
+                </div>
+            </div>
+            {{/if}}
+        </div>
+</div>
+
+<div class="container">
+    <div style="color:white;">
+        <h3> Finalize your Purchase </h3>
+        <hr>
+        <p style="font-size: 19px;"> At Educanimour we care a lot about making this transaction safe and secure for our customers. <br><br>Hence, we have decided that 
+            at this time we will not be encorporating an ability to pay with credit cards on our web store. 
+        </p>
+        <br>
+        <p style="font-size: 19px;"> With that being said... If we see that our customers would appreciate the ability to pay with their credit cards directly from the site,
+            we will happily add this feature. 
+        </p>
+        <br>
+        <p style="font-size: 19px;"> We sell our products face-to-face and organize meetings through emails. </p>
+        <br>
+        <h4> Please fill up the following form to send your purchase to our customer service departement. </h4>
+        <br>
+        Name: <input type="text" class="form-control"> <br>
+        Email: <input type="text" class="form-control"> <br>
+        Location: <input type="text" class="form-control"> <br>
+        <button class="btn btn-danger" style="display:block; margin:0 auto; width: 200px; margin-bottom: 20px;"> Send </button>
+
+    </div>
+</div>

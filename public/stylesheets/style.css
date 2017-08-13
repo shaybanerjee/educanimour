@@ -1,0 +1,30 @@
+.description {
+  color: grey;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.navStyling {
+  background-color: #B2082D; 
+  color: white;
+}
+
+body {
+    background-color: #333333;
+}
+
+.modal {
+  display:block;
+}
+
+.modalSet {
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
