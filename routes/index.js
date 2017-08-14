@@ -6,7 +6,7 @@ var Cart = require('./../models/cart');
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/shop/', function(req, res, next) {
   Product.find(function(err, docs) {
     var productChuncks = []; 
     var chunkSize = 3; 
@@ -29,7 +29,7 @@ router.get('/add-to-cart/:id', function(req, res, next) {
     cart.add(product, product.id);
     req.session.cart = cart; 
     console.log(req.session.cart);
-    res.redirect('/')
+    res.redirect('/shop/')
   });
 
 });
@@ -95,7 +95,16 @@ router.get('/shopping-summary/', function(req, res, next) {
       return res.render('cart-summary', {products : null});
     }
     var cart = new Cart(req.session.cart);
-    res.render('cart-summary', {products: cart.generateArray(), totalPrice: cart.totalPrice});
-})
+    res.render('cart-summary', {products: cart.generateArray(), totalPrice: cart.totalPrice, productsString : JSON.stringify(cart.generateArray())});
+}); 
+
+
+router.get('/order-finish', function(req, res, next) {
+  res.render('order-finish'); 
+});
+
+router.get('/', function(req, res, next) {
+  res.render('homepage/index');
+});
 
 module.exports = router;

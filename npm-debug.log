@@ -7,8 +7,8 @@
 6 silly lifecycle shopping-cart@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle shopping-cart@0.0.0~start: shopping-cart@0.0.0
 8 verbose lifecycle shopping-cart@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle shopping-cart@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/shayonbanerjee/Documents/shopping-cart/node_modules/.bin:/anaconda/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/TeX/texbin
-10 verbose lifecycle shopping-cart@0.0.0~start: CWD: /Users/shayonbanerjee/Documents/shopping-cart
+9 verbose lifecycle shopping-cart@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/shayonbanerjee/Documents/educanimour/node_modules/.bin:/anaconda/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/TeX/texbin
+10 verbose lifecycle shopping-cart@0.0.0~start: CWD: /Users/shayonbanerjee/Documents/educanimour
 11 silly lifecycle shopping-cart@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle shopping-cart@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle shopping-cart@0.0.0~start: Failed to exec start script
@@ -23,7 +23,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:891:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid shopping-cart@0.0.0
-16 verbose cwd /Users/shayonbanerjee/Documents/shopping-cart
+16 verbose cwd /Users/shayonbanerjee/Documents/educanimour
 17 error Darwin 15.4.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 19 error node v6.11.0

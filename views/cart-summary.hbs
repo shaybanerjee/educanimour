@@ -1,3 +1,4 @@
+
 <div class = "container">
     <div style="color:white;"> 
             <h3 style="margin-bottom: 20px;"> Summary of Purchases: </h3>
@@ -6,10 +7,10 @@
                     <div>
                     <ul class="list-group">
                      {{# each products }}
-                        <li class="list-group-item"> 
+                        <li class="list-group-item" style="background-color: #B2082D;"> 
                         <span class="badge"> {{ this.qty }}</span>
-                        <strong style="color:black;"> {{this.item.title }}</strong>
-                        <span class="label label-success"> ${{ this.price }} </span>
+                        <strong style="color:white;"> {{this.item.title }}</strong>
+                        <span class="label label-success" style="float:right; margin-right: 10px; margin-top: 2px;"> ${{ this.price }} </span>
 
                         </li>
                     {{/each}}
@@ -25,26 +26,26 @@
         </div>
 </div>
 
-<div class="container">
+<div class="container" style="padding-top: 20px;">
     <div style="color:white;">
-        <h3> Finalize your Purchase </h3>
+        <h3> Finalize your Purchase <i class="fa fa-handshake-o" aria-hidden="true" style="float:right; margin-right: 10px;"></i></h3>
         <hr>
-        <p style="font-size: 19px;"> At Educanimour we care a lot about making this transaction safe and secure for our customers. <br><br>Hence, we have decided that 
+        <p style="font-size: 19px;"> At Educanimour we care a lot about making this transaction safe and secure for our customers. Hence, we have decided that 
             at this time we will not be encorporating an ability to pay with credit cards on our web store. 
-        </p>
-        <br>
-        <p style="font-size: 19px;"> With that being said... If we see that our customers would appreciate the ability to pay with their credit cards directly from the site,
-            we will happily add this feature. 
-        </p>
-        <br>
-        <p style="font-size: 19px;"> We sell our products face-to-face and organize meetings through emails. </p>
-        <br>
-        <h4> Please fill up the following form to send your purchase to our customer service departement. </h4>
-        <br>
-        Name: <input type="text" class="form-control"> <br>
-        Email: <input type="text" class="form-control"> <br>
-        Location: <input type="text" class="form-control"> <br>
-        <button class="btn btn-danger" style="display:block; margin:0 auto; width: 200px; margin-bottom: 20px;"> Send </button>
-
+            With that being said... If we see that our customers would appreciate the ability to pay with their credit cards directly from the site,
+            we will happily add this feature.
+            We sell our products face-to-face and organize meetings through emails. </p>
+            <br> <br>
+        <h4> Please fill up the following form to send your purchase to our customer service departement. </h4> <br>
+<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxDMH-HoaLa5u2X9sey9cIRrwobARuvSxEaiQIHfg98h4ivirho/exec"> 
+        Name: <input type="text" name="name" class="form-control" style="background-color: #B2082D; color:white;"> <br>
+        Email: <input type="text" name="email" class="form-control" style="background-color: #B2082D; color:white;"> <br>
+        Location: <input type="text" name="location" class="form-control" style="background-color: #B2082D; color:white;"> <br>
+       <input type="text" name="products" class="form-control" value="{{productsString}}" style="display:none;">
+        <a> <button class="btn btn-danger" type="submit" style="display:block; margin:0 auto; width: 200px; margin-top: 10px; margin-bottom: 20px; color:white;"> Send </button>
+</form>
     </div>
 </div>
+
+
+
